@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
-import { EMPLOYEE_HERO_DATA, GLOBAL_TEAMS } from "@/constant/new-home";
 import EmployeeBanner from "./components/EmployeeBanner";
 import GlobalTeams from "./components/GlobalTeams";
+import { EMPLOYEE_HERO_DATA, GLOBAL_TEAMS } from "@/constant/new-home";
 
 export default function Home() {
   return (

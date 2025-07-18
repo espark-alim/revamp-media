@@ -2,7 +2,7 @@ import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import Image from "next/image";
 import EmployeeSlider from "./EmployeeSlider";
-import { EMPLOYEE_SLIDER_DATA } from "../../constant/new-home";
+import { EMPLOYEE_SLIDER_DATA } from "@/constant/new-home";
 
 const EmployeeBanner = ({ data }) => {
   const {
