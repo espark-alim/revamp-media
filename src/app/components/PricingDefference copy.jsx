@@ -1,4 +1,3 @@
-'use client';
 import React from 'react';
 import { Box, Card, Typography } from '@mui/material';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -6,8 +5,13 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import 'swiper/css';
+import {
+  paragraphStyle,
+  PricingDefferenceStyles,
+  slideStyle,
+  titleStyle,
+} from '@/constants/new-home';
 import Image from 'next/image';
-import { paragraphStyle, PricingDefferenceStyles, slideStyle, titleStyle } from '@/constant/new-home';
 
 const PricingDefference = ({ data, backgroundColorStyle, titleColor }) => {
   const {
@@ -26,7 +30,7 @@ const PricingDefference = ({ data, backgroundColorStyle, titleColor }) => {
             width={1200}
             height={600}
             alt="Hero GIF"
-            src={card?.icon}
+            src={card?.icon || '/'}
             style={{ width: '100%', height: 'auto' }}
             priority
           />
